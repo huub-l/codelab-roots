@@ -5,9 +5,9 @@
 wordpress_sites:
   codelab.com:
     site_hosts:
-      - canonical: codeab.test
+      - canonical: codelab.test
         redirects:
-          - www.codeab.test
+          - www.codelab.test
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     admin_email: admin@example.test
     multisite:
