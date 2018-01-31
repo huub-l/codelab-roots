@@ -1,0 +1,8 @@
+{
+  "name": "codelab-roots",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:webberwang/codelab-roots.git",
+  "author": "Webber Wang <webber@codelabstudios.com>",
+  "license": "MIT"
+}
