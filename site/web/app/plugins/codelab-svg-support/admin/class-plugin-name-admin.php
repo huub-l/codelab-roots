@@ -6,8 +6,8 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    Plugin_Name
- * @subpackage Plugin_Name/admin
+ * @package    Codelab_SVG_Support
+ * @subpackage Codelab_SVG_Support/admin
  */
 
 /**
@@ -16,11 +16,11 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the admin-specific stylesheet and JavaScript.
  *
- * @package    Plugin_Name
- * @subpackage Plugin_Name/admin
+ * @package    Codelab_SVG_Support
+ * @subpackage Codelab_SVG_Support/admin
  * @author     Your Name <email@example.com>
  */
-class Plugin_Name_Admin
+class Codelab_SVG_Support_Admin
 {
 
     /**
@@ -28,9 +28,9 @@ class Plugin_Name_Admin
      *
      * @since    1.0.0
      * @access   private
-     * @var      string $plugin_name The ID of this plugin.
+     * @var      string $codelab_svg_support The ID of this plugin.
      */
-    private $plugin_name;
+    private $codelab_svg_support;
 
     /**
      * The version of this plugin.
@@ -46,13 +46,13 @@ class Plugin_Name_Admin
      *
      * @since    1.0.0
      *
-     * @param      string $plugin_name The name of this plugin.
+     * @param      string $codelab_svg_support The name of this plugin.
      * @param      string $version     The version of this plugin.
      */
-    public function __construct($plugin_name, $version)
+    public function __construct($codelab_svg_support, $version)
     {
 
-        $this->plugin_name = $plugin_name;
+        $this->codelab_svg_support = $codelab_svg_support;
         $this->version = $version;
 
     }
@@ -69,15 +69,15 @@ class Plugin_Name_Admin
          * This function is provided for demonstration purposes only.
          *
          * An instance of this class should be passed to the run() function
-         * defined in Plugin_Name_Loader as all of the hooks are defined
+         * defined in Codelab_SVG_Support_Loader as all of the hooks are defined
          * in that particular class.
          *
-         * The Plugin_Name_Loader will then create the relationship
+         * The Codelab_SVG_Support_Loader will then create the relationship
          * between the defined hooks and the functions defined in this
          * class.
          */
 
-        wp_enqueue_style($this->plugin_name, plugin_dir_url(__FILE__) . 'css/plugin-name-admin.css', array(), $this->version, 'all');
+        wp_enqueue_style($this->codelab_svg_support, plugin_dir_url(__FILE__) . 'css/plugin-name-admin.css', array(), $this->version, 'all');
 
     }
 
@@ -93,15 +93,15 @@ class Plugin_Name_Admin
          * This function is provided for demonstration purposes only.
          *
          * An instance of this class should be passed to the run() function
-         * defined in Plugin_Name_Loader as all of the hooks are defined
+         * defined in Codelab_SVG_Support_Loader as all of the hooks are defined
          * in that particular class.
          *
-         * The Plugin_Name_Loader will then create the relationship
+         * The Codelab_SVG_Support_Loader will then create the relationship
          * between the defined hooks and the functions defined in this
          * class.
          */
 
-        wp_enqueue_script($this->plugin_name, plugin_dir_url(__FILE__) . 'js/plugin-name-admin.js', array('jquery'), $this->version, false);
+        wp_enqueue_script($this->codelab_svg_support, plugin_dir_url(__FILE__) . 'js/plugin-name-admin.js', array('jquery'), $this->version, false);
 
     }
 
@@ -122,7 +122,7 @@ class Plugin_Name_Admin
         $url = '';
         $attachmentID = isset($_REQUEST['attachmentID']) ? $_REQUEST['attachmentID'] : '';
 
-        wp_die($_REQUEST);
+//        wp_die($_REQUEST);
 
         if ($attachmentID) {
             $url = wp_get_attachment_url($attachmentID);

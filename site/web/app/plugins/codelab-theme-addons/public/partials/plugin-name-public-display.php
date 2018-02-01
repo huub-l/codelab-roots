@@ -8,8 +8,8 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    Codelab_SVG_Support
- * @subpackage Codelab_SVG_Support/public/partials
+ * @package    Codelab_Theme_Addons
+ * @subpackage Codelab_Theme_Addons/public/partials
  */
 ?>
 

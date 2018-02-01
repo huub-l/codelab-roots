@@ -6,8 +6,8 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    Codelab_SVG_Support
- * @subpackage Codelab_SVG_Support/public
+ * @package    Codelab_Theme_Addons
+ * @subpackage Codelab_Theme_Addons/public
  */
 
 /**
@@ -16,20 +16,20 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the public-facing stylesheet and JavaScript.
  *
- * @package    Codelab_SVG_Support
- * @subpackage Codelab_SVG_Support/public
+ * @package    Codelab_Theme_Addons
+ * @subpackage Codelab_Theme_Addons/public
  * @author     Your Name <email@example.com>
  */
-class Codelab_SVG_Support_Public {
+class Codelab_Theme_Addons_Public {
 
 	/**
 	 * The ID of this plugin.
 	 *
 	 * @since    1.0.0
 	 * @access   private
-	 * @var      string    $codelab_svg_support    The ID of this plugin.
+	 * @var      string    $codelab_theme_addons    The ID of this plugin.
 	 */
-	private $codelab_svg_support;
+	private $codelab_theme_addons;
 
 	/**
 	 * The version of this plugin.
@@ -44,12 +44,12 @@ class Codelab_SVG_Support_Public {
 	 * Initialize the class and set its properties.
 	 *
 	 * @since    1.0.0
-	 * @param      string    $codelab_svg_support       The name of the plugin.
+	 * @param      string    $codelab_theme_addons       The name of the plugin.
 	 * @param      string    $version    The version of this plugin.
 	 */
-	public function __construct( $codelab_svg_support, $version ) {
+	public function __construct( $codelab_theme_addons, $version ) {
 
-		$this->codelab_svg_support = $codelab_svg_support;
+		$this->codelab_theme_addons = $codelab_theme_addons;
 		$this->version = $version;
 
 	}
@@ -65,15 +65,15 @@ class Codelab_SVG_Support_Public {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Codelab_SVG_Support_Loader as all of the hooks are defined
+		 * defined in Codelab_Theme_Addons_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Codelab_SVG_Support_Loader will then create the relationship
+		 * The Codelab_Theme_Addons_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
 
-		wp_enqueue_style( $this->codelab_svg_support, plugin_dir_url( __FILE__ ) . 'css/plugin-name-public.css', array(), $this->version, 'all' );
+		wp_enqueue_style( $this->codelab_theme_addons, plugin_dir_url( __FILE__ ) . 'css/plugin-name-public.css', array(), $this->version, 'all' );
 
 	}
 
@@ -88,15 +88,15 @@ class Codelab_SVG_Support_Public {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Codelab_SVG_Support_Loader as all of the hooks are defined
+		 * defined in Codelab_Theme_Addons_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Codelab_SVG_Support_Loader will then create the relationship
+		 * The Codelab_Theme_Addons_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
 
-		wp_enqueue_script( $this->codelab_svg_support, plugin_dir_url( __FILE__ ) . 'js/plugin-name-public.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( $this->codelab_theme_addons, plugin_dir_url( __FILE__ ) . 'js/plugin-name-public.js', array( 'jquery' ), $this->version, false );
 
 	}
 

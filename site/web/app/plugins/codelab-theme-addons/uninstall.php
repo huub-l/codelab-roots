@@ -22,7 +22,7 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    Codelab_SVG_Support
+ * @package    Codelab_Theme_Addons
  */
 
 // If uninstall not called from WordPress, then exit.

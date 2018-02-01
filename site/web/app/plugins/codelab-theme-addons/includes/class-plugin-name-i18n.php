@@ -9,8 +9,8 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    Codelab_SVG_Support
- * @subpackage Codelab_SVG_Support/includes
+ * @package    Codelab_Theme_Addons
+ * @subpackage Codelab_Theme_Addons/includes
  */
 
 /**
@@ -20,11 +20,11 @@
  * so that it is ready for translation.
  *
  * @since      1.0.0
- * @package    Codelab_SVG_Support
- * @subpackage Codelab_SVG_Support/includes
+ * @package    Codelab_Theme_Addons
+ * @subpackage Codelab_Theme_Addons/includes
  * @author     Your Name <email@example.com>
  */
-class Codelab_SVG_Support_i18n {
+class Codelab_Theme_Addons_i18n {
 
 
 	/**

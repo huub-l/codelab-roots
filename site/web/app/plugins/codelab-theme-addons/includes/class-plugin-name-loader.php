@@ -6,8 +6,8 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    Codelab_SVG_Support
- * @subpackage Codelab_SVG_Support/includes
+ * @package    Codelab_Theme_Addons
+ * @subpackage Codelab_Theme_Addons/includes
  */
 
 /**
@@ -17,11 +17,11 @@
  * the plugin, and register them with the WordPress API. Call the
  * run function to execute the list of actions and filters.
  *
- * @package    Codelab_SVG_Support
- * @subpackage Codelab_SVG_Support/includes
+ * @package    Codelab_Theme_Addons
+ * @subpackage Codelab_Theme_Addons/includes
  * @author     Your Name <email@example.com>
  */
-class Codelab_SVG_Support_Loader {
+class Codelab_Theme_Addons_Loader {
 
 	/**
 	 * The array of actions registered with WordPress.

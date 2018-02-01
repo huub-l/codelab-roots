@@ -6,8 +6,8 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    Plugin_Name
- * @subpackage Plugin_Name/includes
+ * @package    Codelab_SVG_Support
+ * @subpackage Codelab_SVG_Support/includes
  */
 
 /**
@@ -16,11 +16,11 @@
  * This class defines all code necessary to run during the plugin's activation.
  *
  * @since      1.0.0
- * @package    Plugin_Name
- * @subpackage Plugin_Name/includes
+ * @package    Codelab_SVG_Support
+ * @subpackage Codelab_SVG_Support/includes
  * @author     Your Name <email@example.com>
  */
-class Plugin_Name_Activator
+class Codelab_SVG_Support_Activator
 {
 
     /**
@@ -32,7 +32,7 @@ class Plugin_Name_Activator
      */
     public static function activate()
     {
-        add_action('wp_AJAX_svg_get_attachment_url', ['Plugin_Name_Activator', 'get_attachment_url_media_library']);
+        add_action('wp_AJAX_svg_get_attachment_url', ['Codelab_SVG_Support_Activator', 'get_attachment_url_media_library']);
     }
 
     public static function get_attachment_url_media_library()

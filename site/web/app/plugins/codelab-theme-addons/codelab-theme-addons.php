@@ -10,10 +10,10 @@
  *
  * @link              http://example.com
  * @since             1.0.0
- * @package           Codelab_SVG_Support
+ * @package           Codelab_Theme_Addons
  *
  * @wordpress-plugin
- * Plugin Name:       Codelab SVG Support
+ * Plugin Name:       Codelab Theme Addons
  * Plugin URI:        http://example.com/plugin-name-uri/
  * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
  * Version:           1.0.0
@@ -35,30 +35,30 @@ if (!defined('WPINC')) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define('CODELAB_SVG_SUPPORT_VERSION', '1.0.0');
+define('CODELAB_THEME_ADDONS_VERSION', '1.0.0');
 
 /**
  * The code that runs during plugin activation.
  * This action is documented in includes/class-plugin-name-activator.php
  */
-function activate_codelab_svg_support()
+function activate_codelab_theme_addons()
 {
     require_once plugin_dir_path(__FILE__) . 'includes/class-plugin-name-activator.php';
-    Codelab_SVG_Support_Activator::activate();
+    Codelab_Theme_Addons_Activator::activate();
 }
 
 /**
  * The code that runs during plugin deactivation.
  * This action is documented in includes/class-plugin-name-deactivator.php
  */
-function deactivate_codelab_svg_support()
+function deactivate_codelab_theme_addons()
 {
     require_once plugin_dir_path(__FILE__) . 'includes/class-plugin-name-deactivator.php';
-    Codelab_SVG_Support_Deactivator::deactivate();
+    Codelab_Theme_Addons_Deactivator::deactivate();
 }
 
-register_activation_hook(__FILE__, 'activate_codelab_svg_support');
-register_deactivation_hook(__FILE__, 'deactivate_codelab_svg_support');
+register_activation_hook(__FILE__, 'activate_codelab_theme_addons');
+register_deactivation_hook(__FILE__, 'deactivate_codelab_theme_addons');
 
 /**
  * The core plugin class that is used to define internationalization,
@@ -75,12 +75,12 @@ require plugin_dir_path(__FILE__) . 'includes/class-plugin-name.php';
  *
  * @since    1.0.0
  */
-function run_codelab_svg_support()
+function run_codelab_theme_addons()
 {
 
-    $plugin = new Codelab_SVG_Support();
+    $plugin = new Codelab_Theme_Addons();
     $plugin->run();
 
 }
 
-run_codelab_svg_support();
+run_codelab_theme_addons();
