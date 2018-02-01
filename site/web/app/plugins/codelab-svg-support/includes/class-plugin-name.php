@@ -164,6 +164,10 @@ class Codelab_SVG_Support
 
         // Add my hooks
         $this->loader->add_action('admin_enqueue_scripts', $plugin_admin, 'codelab_enable_svg_support');
+        $this->loader->add_action('wp_ajax_svg_get_attachment_url', $plugin_admin, 'get_attachment_url_media_library');
+        $this->loader->add_filter('upload_mimes', $plugin_admin, 'add_svg_mime_types');
+        $this->loader->add_filter('wp_get_attachment_image_src', $plugin_admin, 'fix_wp_get_attachment_image_svg', 10, 4);  /* the hook */
+
     }
 
     /**

@@ -47,7 +47,7 @@ class Codelab_SVG_Support_Admin
      * @since    1.0.0
      *
      * @param      string $codelab_svg_support The name of this plugin.
-     * @param      string $version     The version of this plugin.
+     * @param      string $version             The version of this plugin.
      */
     public function __construct($codelab_svg_support, $version)
     {
@@ -112,24 +112,44 @@ class Codelab_SVG_Support_Admin
      */
     public function codelab_enable_svg_support()
     {
-
-        $this->get_attachment_url_media_library();
-
+//        add_action('wp_AJAX_svg_get_attachment_url', [$this, 'get_attachment_url_media_library']);
     }
 
-    private function get_attachment_url_media_library()
+    public function fix_wp_get_attachment_image_svg($image, $attachment_id, $size, $icon)
+    {
+        if (is_array($image) && preg_match('/\.svg$/i', $image[0]) && $image[1] <= 1) {
+            if (is_array($size)) {
+                $image[1] = $size[0];
+                $image[2] = $size[1];
+            } elseif (($xml = simplexml_load_file($image[0])) !== false) {
+                $attr = $xml->attributes();
+                $viewbox = explode(' ', $attr->viewBox);
+                $image[1] = isset($attr->width) && preg_match('/\d+/', $attr->width, $value) ? (int)$value[0] : (count($viewbox) == 4 ? (int)$viewbox[2] : null);
+                $image[2] = isset($attr->height) && preg_match('/\d+/', $attr->height, $value) ? (int)$value[0] : (count($viewbox) == 4 ? (int)$viewbox[3] : null);
+            } else {
+                $image[1] = $image[2] = null;
+            }
+        }
+        return $image;
+    }
+
+    public function add_svg_mime_types($mimes)
+    {
+        $mimes['svg'] = 'image/svg';
+        return $mimes;
+    }
+
+    public function get_attachment_url_media_library()
     {
         $url = '';
         $attachmentID = isset($_REQUEST['attachmentID']) ? $_REQUEST['attachmentID'] : '';
-
-//        wp_die($_REQUEST);
-
         if ($attachmentID) {
             $url = wp_get_attachment_url($attachmentID);
-            echo 'good';
-            die();
         }
 
+        echo $url;
+
+        die();
     }
 
 }
