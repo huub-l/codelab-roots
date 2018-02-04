@@ -141,15 +141,22 @@ class Codelab_SVG_Support_Admin
 
     public function get_attachment_url_media_library()
     {
-        $url = '';
-        $attachmentID = isset($_REQUEST['attachmentID']) ? $_REQUEST['attachmentID'] : '';
-        if ($attachmentID) {
-            $url = wp_get_attachment_url($attachmentID);
+        $data = [];
+        $attachmentIds = isset($_REQUEST['attachmentIds']) ? $_REQUEST['attachmentIds'] : '';
+
+        if (is_array($attachmentIds)) {
+
+            $data = array_map(function ($attachmentID) {
+                $attachmentUrl = wp_get_attachment_url($attachmentID);
+                return [
+                    "id" => $attachmentID,
+                    "src" => $attachmentUrl
+                ];
+            }, $attachmentIds);
+
         }
 
-        echo $url;
-
-        die();
+        wp_send_json($data);
     }
 
 }

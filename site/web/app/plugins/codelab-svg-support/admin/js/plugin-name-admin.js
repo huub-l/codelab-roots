@@ -31,12 +31,13 @@
 	//create a mutation observer to look for added 'attachments' in the media uploader
 	$(document).ready(function () {
 
-		var timeBefore = new Date();
-
 		var svgAttachmentIds_unprocessed = [];
-		var svgAttachmentIds_proccessed = [];
+		var fetchedSrc = null;
 
 		var observer = new MutationObserver(function (mutations) {
+
+			// Reset on each mutation
+			svgAttachmentIds_unprocessed = [];
 
 			// look through all mutations that just occured
 			for (var i = 0; i < mutations.length; i++) {
@@ -54,51 +55,48 @@
 						if (element.attr('class').includes('attachment')) {
 
 							//find attachment inner (which contains subtype info)
-							var isSvg = element.find('.filename').text().includes('.svg');
 							svgAttachmentIds_unprocessed.push(element.attr('data-id'));
-
-							//only run for SVG elements
-							if (isSvg) {
-
-								//bind an inner function to element so we have access to it.
-								var handler = function (element) {
-
-									//do a WP AJAX call to get the URL
-
-								}(element);
-
-							}
 						}
 					}
 				}
 			}
-			console.log('done');
-			// console.log(svgAttachmentIds);
-			console.log('Unprocessed:' + svgAttachmentIds_unprocessed.length);
-			svgAttachmentIds_proccessed = svgAttachmentIds_proccessed.concat(svgAttachmentIds_unprocessed);
-			svgAttachmentIds_unprocessed = [];
-			console.log('Processed:' + svgAttachmentIds_proccessed.length);
 
+			if (svgAttachmentIds_unprocessed.length && svgAttachmentIds_unprocessed[0] !== undefined) {
+				// console.log(svgAttachmentIds_unprocessed);
+				// console.log(svgAttachmentIds_unprocessed[0]);
+				// console.log(svgAttachmentIds_unprocessed);
+				// console.log('Processing AJAX...');
+				$.ajax({
+					url: ajaxurl,
+					data: {
+						'action': 'svg_get_attachment_url',
+						'attachmentIds': svgAttachmentIds_unprocessed
+					},
+					success: function (data) {
+						console.log(data);
+						console.log('data fetched');
+						// Loop through data, and bind the image to the correct item
+						if (data) {
+							if (data.length === 1 && $('body.post-type-attachment').hasClass('modal-open')) {
+								fetchedSrc = data[0].src;
+								$('img.details-image').attr('src', fetchedSrc);
+							}
+							data.forEach(function (attachment) {
+								var item = $('.attachment[data-id="' + attachment.id + '"]');
+								var image = item.find('img');
+								image.attr('src', attachment.src)
+									.hide()
+									.css({ 'width': '100%', 'top': '10px' })
+									.delay(50)
+									.show(0);
+								// If we open detail modal
 
-			$.ajax({
-				url: ajaxurl,
-				data: {
-					'action': 'svg_get_attachment_url',
-					'attachmentID': element.attr('data-id')
-				},
-				success: function (data) {
-					if (data) {
-						//replace the default image with the SVG
-						element.find('img').attr('src', data);
-						element.find('img').css({ 'width': '100%', 'top': '12px' });
-						element.find('.filename').text('SVG Image');
-						var timeAfter = new Date().getMilliseconds();
-						console.log(timeAfter - timeBefore);
+							});
+						}
 					}
-				}
-			});
+				});
+			}
 
-			// console.log(timeAfter - timeBefore);
 		});
 
 		observer.observe(document.body, {
@@ -106,7 +104,23 @@
 			subtree: true
 		});
 
+		// If media open
+		if (wp.media) {
+			wp.media.view.Modal.prototype.on('open', function () {
+				console.log('media modal open');
+			});
+		}
 
 	});
 
+})(jQuery);
+
+
+(function ($) {
+	$(document).ready(function () {
+		// wp.media.view.MediaDetails.on('open', function () {
+		// 	// Clever JS here
+		// 	alert('open');
+		// });
+	});
 })(jQuery);
