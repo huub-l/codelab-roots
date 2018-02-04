@@ -2,7 +2,7 @@
 
 sql_file=sql-dump-production.sql
 ip=162.243.128.146
-developemnt_url=$(cat trellis/group_vars/development/wordpress_sites.yml | shyaml get-value 'wordpress_sites.codelab\.com.site_hosts.0.canonical')
+development_url=$(cat trellis/group_vars/development/wordpress_sites.yml | shyaml get-value 'wordpress_sites.codelab\.com.site_hosts.0.canonical')
 staging_url=$(cat trellis/group_vars/staging/wordpress_sites.yml | shyaml get-value 'wordpress_sites.codelab\.com.site_hosts.0.canonical')
 
 #
@@ -20,6 +20,9 @@ cd trellis && ssh vagrant@codelab.test "cd /srv/www/codelab.com/current &&
 scp -o StrictHostKeyChecking=no $sql_file web@$ip:/srv/www/codelab.com/current &&
 rm $sql_file" && cd ..
 
+#
+# Import remote SQL file to remote database
+#
 cd site &&
 #wp @staging db reset --yes &&
 #wp @staging plugin install wordpress-importer --activate &&
@@ -27,7 +30,10 @@ wp @staging db import $sql_file &&
 cd ..
 
 #wp import $sql_file &&
-#wp search-replace $developemnt_url $staging_url" && cd ..
+#
+# Replace database URL's
+cd site &&
+wp @staging search-replace $development_url $staging_url && cd ..
 
 
 
