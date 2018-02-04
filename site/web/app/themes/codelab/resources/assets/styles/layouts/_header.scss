@@ -1,0 +1,24 @@
+.banner .nav li {
+  @extend .nav-item;
+}
+
+.banner .nav a {
+  @extend .nav-link;
+}
+
+// Navigation
+.Nav {
+  &.navbar {
+    //background-color: $color-inverse;
+  }
+  .navbar-brand {
+    height: 30px;
+    position: relative;
+    img {
+      top: -6px;
+      position: absolute;
+      height: 40px;
+      width: auto;
+    }
+  }
+}

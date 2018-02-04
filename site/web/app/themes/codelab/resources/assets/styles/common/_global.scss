@@ -1,0 +1,60 @@
+body {
+  background-color: $bg-body;
+}
+
+.Section {
+  @extend .py-5;
+}
+
+// Inverse background & text color
+.Section--inverse {
+  background-color: $color-inverse;
+  color: #fff;
+}
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.Heading {
+}
+
+.Heading-underlined {
+  position: relative;
+  margin-bottom: 1.5rem;
+  text-transform: lowercase;
+  &:before {
+    position: absolute;
+    content: "";
+    width: 3rem;
+    height: 2px;
+    bottom: -0.5rem;
+    border-bottom: 2px solid black;
+  }
+}
+
+// Darker color
+.bg-darker {
+  background-color: darken($dark, 5%);
+}
+
+.bg-light-blue {
+  background-color: $bg-light;
+}
+
+// 300, 400, 500, 600
+
+.font-size-1 {
+  font-size: 1.25rem;
+}
+
+.font-size-2 {
+  font-size: 1.5rem;
+}
+
+.font-size-3 {
+  font-size: 2rem;
+}
+
+

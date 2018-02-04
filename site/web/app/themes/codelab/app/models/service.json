@@ -1,0 +1,13 @@
+{
+  "type": "post-type",
+  "name": "service",
+  "supports": [
+    "title",
+    "thumbnail"
+  ],
+  "labels": {
+    "has_one": "Service",
+    "has_many": "Services",
+    "text_domain": "sage"
+  }
+}

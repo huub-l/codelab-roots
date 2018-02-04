@@ -1,0 +1,56 @@
+.Card {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+// Services
+.Card-service {
+  margin: auto;
+  width: 12em;
+  height: 12em;
+  padding: 1.5em;
+  text-align: center;
+  .Section-services & {
+    margin-top: 2em;
+  }
+  img.Card-serviceThumbnail {
+    width: 5em;
+    height: auto;
+    margin: auto;
+    .Card-service--small > & {
+      width: 4rem;
+    }
+  }
+  .Card-serviceTitle {
+    margin-top: 1em;
+    text-transform: uppercase;
+  }
+}
+
+.Card-service--small {
+  font-size: 70%;
+}
+
+.Card-service--rotateClockwise {
+  transform: rotate(4deg);
+}
+
+.Card-service--rotateCounterclockwise {
+  transform: rotate(-4deg);
+}
+
+// Portfolio
+.Card-portfolio {
+
+}
+
+.Card-blog {
+  .Card-blogTitle {
+  }
+  .Card-blogCategory {
+  }
+  .Card-blogPublishedDate {
+    position: relative;
+    top: 1px;
+  }
+}

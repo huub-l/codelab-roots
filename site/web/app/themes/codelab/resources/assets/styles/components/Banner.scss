@@ -1,0 +1,28 @@
+section.Section-banner {
+  background: url("http://via.placeholder.com/1920x1080") no-repeat center center;
+  background-size: cover;
+  .jumbotron {
+    background-color: transparent;
+    margin-bottom: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .Card {
+    &.index-0 {
+      margin-right: 1rem;
+      margin-bottom: 2rem;
+      transform: rotate(5deg);
+    }
+    &.index-1 {
+      margin-left: 0.5rem;
+      position: relative;
+      bottom: -5rem;
+      transform: rotate(3deg);
+    }
+    &.index-2 {
+      margin-right: 1rem;
+      margin-top: 2rem;
+      transform: rotate(-9deg);
+    }
+  }
+}

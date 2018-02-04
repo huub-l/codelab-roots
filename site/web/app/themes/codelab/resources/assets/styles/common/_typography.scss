@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,500,600');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+// Generate EM for heading
+.h1-em {
+  @extend h1;
+  font-size: ($h1-font-size / 1rem) * 1em;
+  display: block;
+}
+
+.h2-em {
+  @extend h2;
+  font-size: ($h2-font-size / 1rem) * 1em;
+  display: block;
+}
+
+.h3-em {
+  @extend h3;
+  display: block;
+  font-size: ($h3-font-size / 1rem) * 1em;
+}
+
+.h4-em {
+  @extend h4;
+  font-size: ($h4-font-size / 1rem) * 1em;
+  display: block;
+}
+
+.h5-em {
+  @extend h5;
+  font-size: ($h5-font-size / 1rem) * 1em;
+  display: block;
+}
+
+.h6-em {
+  @extend h6;
+  font-size: ($h6-font-size / 1rem) * 1em;
+  display: block;
+}
+
+.font-size-90 {
+  font-size: 90%;
+}
+
+.font-size-80 {
+  font-size: 80%;
+}
+
+.font-size-70 {
+  font-size: 70%;
+}
+
+html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.1rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.15rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.25rem;
+  }
+}

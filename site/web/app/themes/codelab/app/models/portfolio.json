@@ -1,0 +1,13 @@
+{
+  "type": "post-type",
+  "name": "portfolio",
+  "supports": [
+    "title",
+    "thumbnail"
+  ],
+  "labels": {
+    "has_one": "Portfolio",
+    "has_many": "Portfolios",
+    "text_domain": "sage"
+  }
+}

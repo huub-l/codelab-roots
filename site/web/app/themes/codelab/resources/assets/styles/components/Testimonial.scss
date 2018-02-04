@@ -1,0 +1,28 @@
+p.Testimonial-quote {
+  line-height: 2.2;
+  font-weight: 300;
+  font-style: italic;
+  position: relative;
+  &:before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    display: block;
+    left: -1rem;
+    top: -1rem;
+    background: url("http://via.placeholder.com/200x200");
+  }
+  &:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    display: block;
+    background: url("http://via.placeholder.com/200x200");
+    bottom: -1rem;
+    right: -1rem;
+  }
+}

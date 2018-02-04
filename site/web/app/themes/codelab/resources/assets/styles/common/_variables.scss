@@ -1,0 +1,16 @@
+$color-inverse: #3E4750;
+$color-inverse-darker: #31373D;
+$bg-body: #EDF1F3;
+$bg-light: #DBE5EB;
+
+// Bootstrap variable
+$dark: $color-inverse;
+$body-color: #404343;
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+  //xl: 1140px
+    xl: 76rem
+) !default;
