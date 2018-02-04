@@ -7,16 +7,16 @@
 
       <ul class="list-inline text-center py-2">
          <li class="list-inline-item">
-            <img width="150" height="50" src="http://via.placeholder.com/300x150">
+            <img width="150" height="50" src="https://via.placeholder.com/300x150">
          </li>
          <li class="list-inline-item">
-            <img width="150" height="50" src="http://via.placeholder.com/300x150">
+            <img width="150" height="50" src="https://via.placeholder.com/300x150">
          </li>
          <li class="list-inline-item">
-            <img width="150" height="50" src="http://via.placeholder.com/300x150">
+            <img width="150" height="50" src="https://via.placeholder.com/300x150">
          </li>
          <li class="list-inline-item">
-            <img width="150" height="50" src="http://via.placeholder.com/300x150">
+            <img width="150" height="50" src="https://via.placeholder.com/300x150">
          </li>
       </ul>
 
@@ -30,7 +30,7 @@
                   working with them [...] really exceeded our
                   expectations." </p>
                <div class="media mt-5 d-flex align-items-center">
-                  <img width="50" height="50" class="mr-3" src="http://via.placeholder.com/150x150"
+                  <img width="50" height="50" class="mr-3" src="https://via.placeholder.com/150x150"
                        alt="Generic placeholder image">
                   <div class="media-body font-size-80">
                      <span class="h6-em m-0"> Will Hamilton </span>
@@ -40,7 +40,7 @@
             </article>
          </div>
          <div class="col-sm-6">
-            <img src="http://via.placeholder.com/450x300">
+            <img src="https://via.placeholder.com/450x300">
          </div>
       </div>
 

@@ -12,7 +12,7 @@
             <button class="btn btn-primary"> Learn More</button>
          </div>
          <div class="col-sm-4">
-            <img src="http://via.placeholder.com/400x400">
+            <img src="https://via.placeholder.com/400x400">
          </div>
       </div>
    </div>
