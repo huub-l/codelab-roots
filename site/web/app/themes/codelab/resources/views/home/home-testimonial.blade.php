@@ -7,16 +7,16 @@
 
       <ul class="list-inline text-center py-2">
          <li class="list-inline-item mx-2">
-            <img width="150" height="50" src="/app/uploads/2018/02/synergy.png">
+            <img width="120" src="/app/uploads/2018/02/synergy.png">
          </li>
          <li class="list-inline-item mx-2">
-            <img width="150" height="50" src="/app/uploads/2018/02/idrive.png">
+            <img width="120" src="/app/uploads/2018/02/idrive.png">
          </li>
          <li class="list-inline-item mx-2">
-            <img width="150" height="50" src="/app/uploads/2018/02/nodusk.png">
+            <img width="120" src="/app/uploads/2018/02/nodusk.png">
          </li>
          <li class="list-inline-item mx-2">
-            <img width="150" height="50" src="/app/uploads/2018/02/rpnthaus.png">
+            <img width="120" src="/app/uploads/2018/02/rpnthaus.png">
          </li>
       </ul>
 
