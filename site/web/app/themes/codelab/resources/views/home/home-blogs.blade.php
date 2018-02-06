@@ -1,4 +1,4 @@
-<section class="Section Section-blog">
+<section class="Section Section-blog bg-light-blue">
    <div class="container">
 
       <h2 class="Heading Heading-underlined"> Blog </h2>
@@ -8,10 +8,13 @@
                <article class="Card Card-blog card">
                   <img class="card-img-top img-fluid" src="{{ get_the_post_thumbnail_url($blog->ID) }}">
                   <div class="card-body text-center">
-                     <h5 class="Card-blogTitle card-title"> {{ $blog->post_title }} </h5>
-                     <a class="Card-blogCategory card-link"
-                        href="{{ $blog->categoryUrl }}#"> {{ $blog->categoryName }} </a> <span class="mx-1"> | </span>
-                     <span class="Card-blogPublishedDate card-text"> {{ $blog->publishedDate }} </span>
+                     <h6 class="Card-blogTitle card-title"> {{ $blog->post_title }} </h6>
+                     <small>
+                        <a class="Card-blogCategory card-link"
+                           href="{{ $blog->categoryUrl }}#"> {{ $blog->categoryName }} </a> <span
+                           class="mx-1"> | </span>
+                        <span class="Card-blogPublishedDate card-text"> {{ $blog->publishedDate }} </span>
+                     </small>
                   </div>
                </article>
             </div>

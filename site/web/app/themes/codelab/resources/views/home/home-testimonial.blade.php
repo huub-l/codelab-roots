@@ -6,17 +6,17 @@
       </h5>
 
       <ul class="list-inline text-center py-2">
-         <li class="list-inline-item">
-            <img width="150" height="50" src="https://via.placeholder.com/300x150">
+         <li class="list-inline-item mx-2">
+            <img width="150" height="50" src="/app/uploads/2018/02/synergy.png">
          </li>
-         <li class="list-inline-item">
-            <img width="150" height="50" src="https://via.placeholder.com/300x150">
+         <li class="list-inline-item mx-2">
+            <img width="150" height="50" src="/app/uploads/2018/02/idrive.png">
          </li>
-         <li class="list-inline-item">
-            <img width="150" height="50" src="https://via.placeholder.com/300x150">
+         <li class="list-inline-item mx-2">
+            <img width="150" height="50" src="/app/uploads/2018/02/nodusk.png">
          </li>
-         <li class="list-inline-item">
-            <img width="150" height="50" src="https://via.placeholder.com/300x150">
+         <li class="list-inline-item mx-2">
+            <img width="150" height="50" src="/app/uploads/2018/02/rpnthaus.png">
          </li>
       </ul>
 
@@ -40,7 +40,9 @@
             </article>
          </div>
          <div class="col-sm-6">
-            <img src="https://via.placeholder.com/450x300">
+            <a href="#">
+               <img src="/app/uploads/2018/02/video-image.svg">
+            </a>
          </div>
       </div>
 

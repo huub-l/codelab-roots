@@ -4,13 +4,43 @@ $bg-body: #EDF1F3;
 $bg-light: #DBE5EB;
 
 // Bootstrap variable
-$dark: $color-inverse;
+$blue: #4EB2D1;
+//$dark: $color-inverse;
 $body-color: #404343;
+
+// Typo
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$headings-font-family: 'Montserrat', sans-serif;
+$font-weight-bold: 600;
+$line-height-base: 1.6;
 
 $container-max-widths: (
     sm: 540px,
     md: 720px,
     lg: 960px,
-  //xl: 1140px
-    xl: 76rem
+    xl: 1140px
 ) !default;
+
+// Threshold for dynamically generated button color, 0-255
+$yiq-contrasted-threshold: 160;
+
+// Fix issue https://github.com/roots/sage/issues/2017
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
+
+// Button
+$input-btn-focus-box-shadow: none;
+$btn-active-box-shadow: none;
+$input-btn-focus-width: 0;
+
+$input-btn-padding-y: 0.6rem !default;
+$input-btn-padding-x: 2.5rem !default;
+
+$input-btn-padding-y-sm: 0.5rem !default;
+$input-btn-padding-x-sm: 1.5rem !default;
+
+$input-btn-padding-y-lg: 0.85rem !default;
+$input-btn-padding-x-lg: 2.75rem !default;
+//$input-btn-line-height-lg: $line-height-lg !default;
+//$input-btn-line-height-sm: $line-height-sm !default;
+//$input-btn-line-height: $line-height-base !default;

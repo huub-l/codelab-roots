@@ -1,0 +1,25 @@
+.btn {
+  &.btn-primary {
+    @extend .text-white;
+    font-size: 80%;
+  }
+}
+
+.btn-outline-primary {
+  &:hover, &:focus {
+    .Section--inverse & {
+      //color: white;
+    }
+  }
+  &:active {
+    .Section--inverse & {
+      //color: $blue;
+    }
+  }
+}
+
+.btn-outline-light {
+  &:hover, &:focus, &:active {
+    color: $primary !important;
+  }
+}

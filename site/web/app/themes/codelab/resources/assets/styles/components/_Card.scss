@@ -24,6 +24,8 @@
   .Card-serviceTitle {
     margin-top: 1em;
     text-transform: uppercase;
+    font-weight: 600;
+    @extend .Heading;
   }
 }
 

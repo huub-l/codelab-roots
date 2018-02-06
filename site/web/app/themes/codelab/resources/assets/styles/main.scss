@@ -1,7 +1,8 @@
 /* stylelint-disable */
-@import "common/variables";
+//@import "common/variables";
 //Import everything from autoload
-@import "./autoload/**/*";
+@import "./autoload/bootstrap";
+//@import "./autoload/**/*";
 /**
  * Import npm dependencies
  *
@@ -19,7 +20,8 @@
 @import "components/Service";
 @import "components/Banner";
 @import "components/Card";
-@import "components/Testimonial";
+@import "components/Footer";
+@import "components/testimonial";
 @import "layouts/header";
 @import "layouts/sidebar";
 @import "layouts/footer";

@@ -1,6 +1,7 @@
 section.Section-banner {
-  background: url("https://via.placeholder.com/1920x1080") no-repeat center center;
+  background: url("//codelab.test/app/uploads/2018/02/bubbles.png") no-repeat center center;
   background-size: cover;
+  background-color: #4AABC9;
   .jumbotron {
     background-color: transparent;
     margin-bottom: 0;
@@ -8,6 +9,7 @@ section.Section-banner {
     padding-bottom: 1.5rem;
   }
   .Card {
+    color: $body-color;
     &.index-0 {
       margin-right: 1rem;
       margin-bottom: 2rem;
