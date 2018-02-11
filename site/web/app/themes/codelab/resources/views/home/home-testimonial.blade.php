@@ -30,7 +30,7 @@
                   working with them [...] really exceeded our
                   expectations." </p>
                <div class="media mt-5 d-flex align-items-center">
-                  <img width="50" height="50" class="mr-3" src="https://via.placeholder.com/150x150"
+                  <img width="50" height="50" class="mr-3" src="/app/uploads/2018/02/WillH.svg"
                        alt="Generic placeholder image">
                   <div class="media-body font-size-80">
                      <span class="h6-em m-0"> Will Hamilton </span>

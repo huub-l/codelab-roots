@@ -1,0 +1,19 @@
+.Navigation {
+
+}
+
+.Navigation-category {
+  .card {
+    padding: 0.5rem 1rem;
+  }
+  ul.list-inline, .search-form {
+    margin: 0;
+  }
+  .search-form .search-field {
+    padding: 0.5rem;
+  }
+
+  .Navigation-search {
+    flex-grow: 1;
+  }
+}

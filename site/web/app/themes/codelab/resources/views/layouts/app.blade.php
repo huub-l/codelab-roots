@@ -7,6 +7,7 @@
 <div class="wrap" role="document">
    <div class="content">
       <main class="main">
+         {{--         {{ get_page_template() }}--}}
          @yield('content')
       </main>
       @if (App\display_sidebar())

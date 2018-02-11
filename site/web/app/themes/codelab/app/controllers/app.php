@@ -12,8 +12,12 @@ class App extends Controller
     */
    public function __construct()
    {
+
    }
 
+   public static function posts()
+   {
+   }
 
    public function siteName()
    {

@@ -1,0 +1,11 @@
+.addtoany_share_save_container {
+  border-top: $hr-border-width solid $hr-border-color;
+  border-bottom: $hr-border-width solid $hr-border-color;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  .addtoany_header {
+    display: inline-block;
+    margin: 0;
+    margin-right: 1rem;
+  }
+}

@@ -56,3 +56,11 @@
     top: 1px;
   }
 }
+
+.Card-blog--full {
+  img.Card-blogThumbnail {
+    object-fit: none; /* Do not scale the image */
+    object-position: center; /* Center the image within the element */
+    width: 100%;
+  }
+}

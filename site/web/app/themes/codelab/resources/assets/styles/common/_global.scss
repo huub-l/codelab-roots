@@ -2,6 +2,11 @@ body {
   background-color: $bg-body;
 }
 
+body.single .content,
+body.blog .content {
+  padding-top: 2rem;
+}
+
 .Section {
   //@extend .py-5;
   padding-top: 4rem;

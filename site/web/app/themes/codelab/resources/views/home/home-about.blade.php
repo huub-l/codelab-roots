@@ -13,7 +13,7 @@
             <button class="btn btn-primary"> Learn More</button>
          </div>
          <div class="col-sm-4">
-            <img src="https://via.placeholder.com/400x400">
+            <img class="img-responsive" src="/app/uploads/2018/02/About.svg">
          </div>
       </div>
    </div>

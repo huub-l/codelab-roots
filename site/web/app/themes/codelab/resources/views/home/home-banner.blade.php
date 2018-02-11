@@ -16,11 +16,13 @@
             </div>
             <div class="col-sm-5">
                <div class="row">
-                  @foreach($services as $service)
-                     <div class="col-6">
-                        @include('partials.component-card-service', ['cardClass' => 'Card-service--small'])
-                     </div>
-                  @endforeach
+                  @if(isset($services))
+                     @foreach($services as $service)
+                        <div class="col-6">
+                           @include('partials.component-card-service', ['cardClass' => 'Card-service--small'])
+                        </div>
+                     @endforeach
+                  @endif
                </div>
             </div>
          </div>
