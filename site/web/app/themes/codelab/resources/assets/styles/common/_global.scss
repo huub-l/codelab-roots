@@ -2,9 +2,12 @@ body {
   background-color: $bg-body;
 }
 
-body.single .content,
-body.blog .content {
+body .content {
   padding-top: 2rem;
+}
+
+body.front-page-data .content {
+  padding: 0;
 }
 
 .Section {
