@@ -11,6 +11,34 @@
 }
 
 // Generate EM for heading
+.lead {
+  letter-spacing: $letter-spacing-md;
+}
+
+h1, .h1 {
+  letter-spacing: $letter-spacing-lg;
+}
+
+h2, .h2 {
+  letter-spacing: $letter-spacing-md;
+}
+
+h3, .h3 {
+  letter-spacing: $letter-spacing-md;
+}
+
+h4, .h4 {
+  letter-spacing: $letter-spacing-sm;
+}
+
+h5, .h5 {
+  letter-spacing: $letter-spacing-sm;
+}
+
+h6, .h6 {
+  letter-spacing: $letter-spacing-sm;
+}
+
 .h1-em {
   @extend h1;
   font-size: ($h1-font-size / 1rem) * 1em;

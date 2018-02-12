@@ -1,12 +1,15 @@
 $color-inverse: #3E4750;
 $color-inverse-darker: #31373D;
-$bg-body: #EDF1F3;
-$bg-light: #DBE5EB;
+$bg-light: #E5EBEF;
 
 // Bootstrap variable
 $blue: #4EB2D1;
+$body-bg: #F2F5F6;
 $dark: $color-inverse;
 $body-color: #404343;
+$letter-spacing-sm: 0.03rem;
+$letter-spacing-md: 0.05rem;
+$letter-spacing-lg: 0.08rem;
 
 // Typo
 $font-family-sans-serif: 'Open Sans', sans-serif;
@@ -39,7 +42,7 @@ $input-btn-padding-x: 2.5rem !default;
 $input-btn-padding-y-sm: 0.5rem !default;
 $input-btn-padding-x-sm: 1.5rem !default;
 
-$input-btn-padding-y-lg: 0.85rem !default;
+$input-btn-padding-y-lg: 1.15rem !default;
 $input-btn-padding-x-lg: 2.25rem !default;
 //$input-btn-line-height-lg: $line-height-lg !default;
 //$input-btn-line-height-sm: $line-height-sm !default;

@@ -34,19 +34,23 @@
          <div class="col-sm-4">
             <section class="Footer-links">
                <ul class="list-inline">
-                  <li class="list-inline-item"><a href="#"> Web Design</a></li>
-                  <li class="list-inline-item"><a href="#"> Web Development</a></li>
-                  <li class="list-inline-item"><a href="#"> UI UX Design</a></li>
-                  <li class="list-inline-item"><a href="#"> Portfolio</a></li>
-                  <li class="list-inline-item"><a href="#"> Blog</a></li>
-                  <li class="list-inline-item"><a href="#"> Contact Us</a></li>
+                  <li class="list-inline-item"><a href="#">Web Design</a></li>
+                  <li class="list-inline-item"><a href="#">Web Development</a></li><!--
+                  --><br><!--
+                  -->
+                  <li class="list-inline-item"><a href="#">UI UX Design</a></li>
+                  <li class="list-inline-item"><a href="#">Portfolio</a></li><!--
+                  --><br><!--
+                  -->
+                  <li class="list-inline-item"><a href="#">Blog</a></li>
+                  <li class="list-inline-item"><a href="#">Contact Us</a></li>
                </ul>
             </section>
          </div>
       </div>
       <hr>
-      <div class="row">
-         <div class="col-sm-5">
+      <div class="row py-2">
+         <div class="col-sm-4">
             <section class="Footer-terms">
                <ul class="list-inline">
                   <li class="list-inline-item"><a href="#"> Home </a></li>
@@ -55,7 +59,7 @@
                </ul>
             </section>
          </div>
-         <div class="col-sm-2">
+         <div class="col-sm-4">
             <section class="Footer-social">
                <ul class="list-inline">
                   <li class="list-inline-item"><a href="#"> <i class="fa fa-twitter"></i> </a></li>
@@ -65,9 +69,9 @@
                </ul>
             </section>
          </div>
-         <div class="col-sm-5">
+         <div class="col-sm-4">
             <section class="Footer-copyright">
-               <span> © CodelabStudios.com, an Atlanta Web Design Company. </span>
+               <span> © CodelabStudios.com, Atlanta Design. </span>
             </section>
          </div>
       </div>

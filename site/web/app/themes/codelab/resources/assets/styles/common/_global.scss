@@ -1,5 +1,5 @@
 body {
-  background-color: $bg-body;
+  background-color: $body-bg;
 }
 
 body .content {
@@ -18,6 +18,13 @@ body.front-page-data .content {
   .Section-heading {
     text-align: center;
   }
+}
+
+.img-thumbnail {
+  background-color: $bg-light;
+  //border: 1px solid #dee2e6;
+  border-radius: $card-border-radius;
+  padding: 0.5rem;
 }
 
 // Inverse background & text color

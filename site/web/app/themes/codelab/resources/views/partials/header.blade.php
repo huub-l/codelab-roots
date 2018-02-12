@@ -46,9 +46,6 @@
 
             {{--@debug('controller')--}}
             <li class="nav-item px-2">
-               <span class="nav-link" href="#">|</span>
-            </li>
-            <li class="nav-item px-2">
                <a class="btn btn-primary btn-sm" href="#">Free Consultation</a>
             </li>
             <li class="nav-item d-flex align-items-center px-2">

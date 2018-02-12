@@ -1,5 +1,6 @@
 footer.Section-footer {
   $grey: #989B9E;
+  $grey-darker: #54595E;
   padding-top: 2.5rem;
   padding-bottom: 1rem;
   font-family: 'Montserrat';
@@ -11,7 +12,7 @@ footer.Section-footer {
     font-weight: 300;
   }
   hr {
-    border-color: $grey;
+    border-color: $grey-darker;
   }
   .Footer-address {
     font-size: 90%;
@@ -25,6 +26,9 @@ footer.Section-footer {
       padding-top: 0.25rem;
       padding-bottom: 0.15rem;
     }
+    button {
+      text-transform: uppercase;
+    }
     .dropdown-item {
       font-size: 80%;
     }
@@ -33,26 +37,42 @@ footer.Section-footer {
     text-align: right;
     font-size: 90%;
     li.list-inline-item {
-      margin-right: 0;
-      margin-left: 0.5rem;
+      margin: 0 0 1rem 1rem;
     }
   }
   .Footer-terms {
+    text-transform: uppercase;
     font-weight: $font-weight-light;
     font-size: 80%;
     ul.list-inline {
       margin: 0;
+      li.list-inline-item {
+        margin-right: 1.5rem;
+        a {
+          color: $grey-darker;
+        }
+      }
     }
   }
   .Footer-social {
     text-align: center;
     ul.list-inline {
       margin: 0;
+      li.list-inline-item {
+        margin: 0 0.75rem;
+        i {
+          color: $grey-darker;
+          font-size: 1.40rem;
+        }
+      }
     }
   }
   .Footer-copyright {
     text-align: right;
     font-weight: $font-weight-light;
     font-size: 80%;
+    span {
+      color: $grey-darker;
+    }
   }
 }

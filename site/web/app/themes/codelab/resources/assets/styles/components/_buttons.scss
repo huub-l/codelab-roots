@@ -1,4 +1,5 @@
 .btn {
+  font-family: $headings-font-family;
   &.btn-primary {
     @extend .text-white;
     font-size: 80%;
@@ -25,4 +26,12 @@
   &:focus {
     color: white;
   }
+}
+
+.Btn-outline {
+  min-width: 15rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  font-size: 1.2rem;
+  border-width: 2px;
 }

@@ -1,7 +1,10 @@
 .Navigation {
   font-family: $headings-font-family;
-  font-size: 1rem;
-  letter-spacing: 0.05rem;
+  font-size: 0.9rem;
+  letter-spacing: $letter-spacing-lg;
+  .container {
+    padding: 0;
+  }
 }
 
 .Navigation-category {

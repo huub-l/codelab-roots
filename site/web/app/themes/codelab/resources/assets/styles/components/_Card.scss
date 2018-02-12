@@ -1,6 +1,7 @@
 .Card {
   border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0px 7px 42px 0px rgba(0, 0, 0, 0.1);
 }
 
 // Services
@@ -9,10 +10,13 @@
   width: 12em;
   height: 12em;
   padding: 1.5em;
+  margin-right: 1.0rem; // Offset rotation
   text-align: center;
   float: right;
   .order-first > & {
     float: none;
+    margin-right: 0;
+    margin-left: 1.0rem; // Offset rotation
   }
   .Section-services & {
     margin-top: 2em;
@@ -35,7 +39,7 @@
 }
 
 .Card-service--small {
-  font-size: 70%;
+  font-size: 80%;
 }
 
 .Card-service--rotateClockwise {

@@ -1,9 +1,9 @@
 <section class="Section Section-testimonial">
    <div class="container">
 
-      <h5 class="text-center mb-4">
+      <h4 class="text-center mb-4">
          Trusted by clients, big and small. Local to Atlanta but serving all.
-      </h5>
+      </h4>
 
       <ul class="list-inline text-center py-2">
          <li class="list-inline-item mx-2">
@@ -41,7 +41,7 @@
          </div>
          <div class="col-sm-6">
             <a href="#">
-               <img src="/app/uploads/2018/02/video-image.svg">
+               <img src="/app/uploads/2018/02/video-image.svg" class="img-thumbnail">
             </a>
          </div>
       </div>
