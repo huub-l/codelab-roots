@@ -4,6 +4,7 @@ body {
 
 body .content {
   padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 body.front-page-data .content {
@@ -75,4 +76,15 @@ body.front-page-data .content {
   font-size: 2rem;
 }
 
-
+// Sticky Footer
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  &.admin-bar {
+    min-height: calc(100vh - 32px);
+  }
+  .wrap {
+    flex: 1;
+  }
+}

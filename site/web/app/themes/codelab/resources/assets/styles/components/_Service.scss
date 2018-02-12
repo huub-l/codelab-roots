@@ -1,6 +1,9 @@
-/* stylelint-disable */
-article.Service {
-  .Service-cardThumbnail {
-    width: 150px;
+.Service {
+  margin-top: 7rem;
+  &:nth-of-type(1) {
+    margin-top: 3rem;
   }
+  //.Service-cardThumbnail {
+  //  width: 150px;
+  //}
 }

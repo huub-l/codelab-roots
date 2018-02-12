@@ -8,7 +8,7 @@
 {{--</nav>--}}
 {{--</div>--}}
 {{--</header>--}}
-<nav class="Nav navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="Navigation Navigation-header navbar navbar-expand-lg navbar-dark bg-dark">
    <div class="container">
 
       {{--<a class="navbar-brand" href="{{ home_url() }}#">--}}
@@ -49,7 +49,7 @@
                <span class="nav-link" href="#">|</span>
             </li>
             <li class="nav-item px-2">
-               <a class="btn btn-primary" href="#">Free Consultation</a>
+               <a class="btn btn-primary btn-sm" href="#">Free Consultation</a>
             </li>
             <li class="nav-item d-flex align-items-center px-2">
                <a class="nav-link" href="#"> <i class="fa fa-phone" aria-hidden="true"></i> </a>

@@ -1,8 +1,11 @@
 p.Testimonial-quote {
   line-height: 2.2;
-  font-weight: 300;
+  font-weight: $font-weight-light;
   font-style: italic;
   position: relative;
+  letter-spacing: 0.10rem;
+  font-size: 1.25rem;
+  font-family: $headings-font-family;
   &:before {
     z-index: -1;
     content: "";

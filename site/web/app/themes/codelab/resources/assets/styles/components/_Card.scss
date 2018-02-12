@@ -5,11 +5,15 @@
 
 // Services
 .Card-service {
-  margin: auto;
+  //margin: auto;
   width: 12em;
   height: 12em;
   padding: 1.5em;
   text-align: center;
+  float: right;
+  .order-first > & {
+    float: none;
+  }
   .Section-services & {
     margin-top: 2em;
   }
@@ -20,6 +24,7 @@
     .Card-service--small > & {
       width: 4rem;
     }
+
   }
   .Card-serviceTitle {
     margin-top: 1em;
