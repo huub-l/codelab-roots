@@ -1,7 +1,8 @@
 section.Section-banner {
+  $bg-color: #4AABC9;
   background: url("/app/uploads/2018/02/bubbles.png") no-repeat center center;
   background-size: cover;
-  background-color: $blue;
+  background-color: $bg-color;
   position: relative;
   .Section-bannerText {
     h1 {
@@ -22,7 +23,7 @@ section.Section-banner {
     height: $width;
     border-left: $width solid transparent;
     border-right: $width solid transparent;
-    border-top: $width solid $blue;
+    border-top: $width solid $bg-color;
   }
   .jumbotron {
     background-color: transparent;
