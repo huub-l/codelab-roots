@@ -8,7 +8,7 @@
 {{--</nav>--}}
 {{--</div>--}}
 {{--</header>--}}
-<nav class="Navigation Navigation-header navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="Navigation Navigation-header navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
    <div class="container">
 
       {{--<a class="navbar-brand" href="{{ home_url() }}#">--}}
