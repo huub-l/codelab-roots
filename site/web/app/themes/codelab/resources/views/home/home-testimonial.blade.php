@@ -7,7 +7,7 @@
 
       <ul class="list-inline text-center py-2">
          <li class="list-inline-item mx-2">
-            <img width="120" src="/app/uploads/2018/02/synergy.png">
+            <img width="120" src="/app/uploads/2018/02/synergy.svg">
          </li>
          <li class="list-inline-item mx-2">
             <img width="120" src="/app/uploads/2018/02/idrive.png">
