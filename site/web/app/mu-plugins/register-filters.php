@@ -12,3 +12,4 @@ function change_logo_class($html)
 {
    return str_replace('custom-logo-link', 'navbar-brand', $html);
 }
+

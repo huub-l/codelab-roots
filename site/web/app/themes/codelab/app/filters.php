@@ -70,4 +70,11 @@ add_filter('comments_template', function ($comments_template) {
 });
 
 
-
+/**
+ * Add location for search form template
+ */
+//add_filter('get_search_form', function () {
+//   $form = '';
+//   echo template('partials.searchform');
+//   return $form;
+//});

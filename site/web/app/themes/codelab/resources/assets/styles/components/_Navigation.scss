@@ -6,13 +6,23 @@
 
 .Navigation-category {
   .card {
-    padding: 0.5rem 1rem;
+    padding: 1rem 1.5rem;
   }
   ul.list-inline, .search-form {
     margin: 0;
   }
-  .search-form .search-field {
-    padding: 0.5rem;
+  .search-form {
+    input.search-field {
+      padding: 0.5rem;
+      border: none;
+      background-color: $gray-200;
+      &::placeholder {
+        color: $gray-400;
+      }
+    }
+    input.search-submit {
+      display: none;
+    }
   }
 
   .Navigation-search {
