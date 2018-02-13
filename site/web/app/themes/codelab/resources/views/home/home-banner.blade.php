@@ -8,7 +8,9 @@
                   <p class="mb-5 lead"> We're an Atlanta web design agency serving enterprise businesses, entrepreneurs,
                      and startups. Developing innovative web apps is our passion :) </p>
                   <p class="">
-                     <a class="Btn-outline Section-bannerBtn btn btn-outline-light btn-lg" href="#" role="button"> Free
+                     <a class="Btn-outline Section-bannerBtn btn btn-outline-light btn-lg"
+                        href="/lastform/1"
+                        role="button"> Free
                         Consultation </a>
                   </p>
                </div>
