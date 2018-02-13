@@ -11,29 +11,11 @@ body.front-page-data .content {
   padding: 0;
 }
 
-.Section {
-  //@extend .py-5;
-  padding-top: 4rem;
-  padding-bottom: 5rem;
-  .Section-heading {
-    text-align: center;
-  }
-}
-
 .img-thumbnail {
   background-color: $bg-light;
   //border: 1px solid #dee2e6;
   border-radius: $card-border-radius;
   padding: 0.5rem;
-}
-
-// Inverse background & text color
-.Section--inverse {
-  background-color: $color-inverse;
-  color: #fff;
-  //.btn {
-  //  color: inherit;
-  //}
 }
 
 .container {
@@ -62,7 +44,7 @@ body.front-page-data .content {
 
 // Darker color
 .bg-darker {
-  background-color: #31373D;
+  background-color: #31373D !important;
 }
 
 .bg-light-blue {
@@ -95,3 +77,16 @@ body {
     flex: 1;
   }
 }
+
+// Make content grow
+.wrap {
+  .content, main.main {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    .flex-grow {
+      flex-grow: 1;
+    }
+  }
+}
+

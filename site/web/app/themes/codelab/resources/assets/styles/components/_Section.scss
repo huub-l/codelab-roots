@@ -1,0 +1,25 @@
+.Section {
+  //@extend .py-5;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+}
+
+.Section-heading {
+  text-align: center;
+}
+
+.Section-cta {
+  body.services & {
+    // Offset content padding
+    margin-bottom: -2rem;
+  }
+}
+
+// Inverse background & text color
+.Section--inverse {
+  background-color: $color-inverse;
+  color: #fff;
+  //.btn {
+  //  color: inherit;
+  //}
+}
