@@ -13,3 +13,10 @@ if (!function_exists('dd')) {
       die();
    }
 }
+
+function my_shortcode()
+{
+   $output = '';
+   $output .= '<html>content</html>';
+   return $output;
+}
