@@ -33,23 +33,21 @@
             {{--</li>--}}
          </ul>
          <ul class="navbar-nav mr-0 text-right">
-
             @php
                global $post;
             @endphp
             @foreach($primary_navigation as $menu)
-               <li class="nav-item px-2">
+               <li class="nav-item px-2 text-center">
                   <a class="nav-link {{ $post->ID == $menu->object_id ? 'active' : '' }}"
                      href="{{ $menu->url }}"> {{ $menu->title }} </a>
                </li>
             @endforeach
-
             {{--@debug('controller')--}}
-            <li class="nav-item px-2">
-               <a class="btn btn-primary btn-sm" href="#">Free Consultation</a>
+            <li class="nav-item text-center px-2">
+               <a class="btn btn-primary btn-sm" href="/lastform/1">Free Consultation</a>
             </li>
-            <li class="nav-item d-flex align-items-center px-2">
-               <a class="nav-link" href="#"> <i class="fa fa-phone" aria-hidden="true"></i> </a>
+            <li class="nav-item d-flex align-items-center justify-content-center px-2">
+               <a class="nav-link" href="tel:+18442605003"> <i class="fa fa-phone" aria-hidden="true"></i> </a>
             </li>
          </ul>
       </div>

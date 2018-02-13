@@ -4,7 +4,7 @@
       <h2 class="Heading Heading-underlined"> Blog </h2>
       <div class="row">
          @foreach($blogs as $blog)
-            <div class="col-sm-4">
+            <div class="col-12 col-md-4">
                @include('partials.content-blog', ['style' => 'card'])
             </div>
          @endforeach

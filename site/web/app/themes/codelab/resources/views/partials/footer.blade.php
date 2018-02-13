@@ -1,7 +1,7 @@
 <footer class="Section Section--inverse Section-footer bg-darker">
    <div class="container">
-      <div class="row mb-3">
-         <div class="col-sm-4">
+      <div class="row Footer-topSection">
+         <div class="col-md-4">
             <section class="Footer-address">
                <address>
                   <strong> Atlanta Web Design Company </strong> <br>
@@ -12,7 +12,7 @@
                </address>
             </section>
          </div>
-         <div class="col-sm-4">
+         <div class="col-md-4">
             <section class="Footer-contact">
                <p class="Footer-contactQuestion"> How can we help you? </p>
                {{--<button class="btn btn-outline-light"> Web Design</button>--}}
@@ -23,53 +23,55 @@
                      Web Design
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                     <a class="dropdown-item" href="#"> Web Design </a>
-                     <a class="dropdown-item" href="#"> Web Design </a>
+                     <a class="dropdown-item" href="/lastform/1"> Web Design </a>
+                     <a class="dropdown-item" href="/lastform/1"> Web Development </a>
                      {{--<a class="dropdown-item" href="#">Another action</a>--}}
                      {{--<a class="dropdown-item" href="#">Something else here</a>--}}
                   </div>
                </div>
             </section>
          </div>
-         <div class="col-sm-4">
+         <div class="col-md-4">
             <section class="Footer-links">
                <ul class="list-inline">
-                  <li class="list-inline-item"><a href="#">Web Design</a></li>
-                  <li class="list-inline-item"><a href="#">Web Development</a></li><!--
+                  <li class="list-inline-item"><a href="/services">Web Design</a></li>
+                  <li class="list-inline-item"><a href="/services">Web Development</a></li><!--
                   --><br><!--
                   -->
-                  <li class="list-inline-item"><a href="#">UI UX Design</a></li>
-                  <li class="list-inline-item"><a href="#">Portfolio</a></li><!--
+                  <li class="list-inline-item"><a href="/services">UI UX Design</a></li>
+                  <li class="list-inline-item"><a href="/portfolio">Portfolio</a></li><!--
                   --><br><!--
                   -->
-                  <li class="list-inline-item"><a href="#">Blog</a></li>
-                  <li class="list-inline-item"><a href="#">Contact Us</a></li>
+                  <li class="list-inline-item mb-0"><a href="/blog">Blog</a></li>
+                  <li class="list-inline-item mb-0"><a href="/lastform/1">Contact Us</a></li>
                </ul>
             </section>
          </div>
       </div>
       <hr>
-      <div class="row py-2">
-         <div class="col-sm-4">
+      <div class="row Footer-bottomSection">
+         <div class="col-md-4 d-none d-md-block">
             <section class="Footer-terms">
                <ul class="list-inline">
-                  <li class="list-inline-item"><a href="#"> Home </a></li>
-                  <li class="list-inline-item"><a href="#"> Terms of Use </a></li>
-                  <li class="list-inline-item"><a href="#"> Privacy Policy </a></li>
+                  <li class="list-inline-item"><a href="/"> Home </a></li>
+                  <li class="list-inline-item"><a href="/terms-of-service"> Terms of Use </a></li>
+                  <li class="list-inline-item"><a href="/privacy-policy"> Privacy Policy </a></li>
                </ul>
             </section>
          </div>
-         <div class="col-sm-4">
+         <div class="col-md-4 d-none d-md-block">
             <section class="Footer-social">
                <ul class="list-inline">
-                  <li class="list-inline-item"><a href="#"> <i class="fa fa-twitter"></i> </a></li>
-                  <li class="list-inline-item"><a href="#"> <i class="fa fa-facebook-official"></i> </a></li>
-                  <li class="list-inline-item"><a href="#"> <i class="fa fa-youtube-play"></i> </a></li>
-                  <li class="list-inline-item"><a href="#"> <i class="fa fa-google-plus"></i> </a></li>
+                  <li class="list-inline-item"><a href="https://twitter.com/codelabstudios"> <i
+                           class="fa fa-twitter"></i> </a></li>
+                  <li class="list-inline-item"><a href="https://www.facebook.com/codelabstudios"> <i
+                           class="fa fa-facebook-official"></i> </a></li>
+                  {{--<li class="list-inline-item"><a href="#"> <i class="fa fa-youtube-play"></i> </a></li>--}}
+                  {{--<li class="list-inline-item"><a href="#"> <i class="fa fa-google-plus"></i> </a></li>--}}
                </ul>
             </section>
          </div>
-         <div class="col-sm-4">
+         <div class="col-md-4">
             <section class="Footer-copyright">
                <span> © CodelabStudios.com, Atlanta Design. </span>
             </section>

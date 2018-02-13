@@ -8,7 +8,7 @@
    <div class="container flex-grow" style="padding-bottom: 2rem;">
       <div class="row">
          @foreach($services as $service)
-            <div class="col-6">
+            <div class="col-md-12 col-lg-6">
                <div class="Card Card-section card mt-0">
                   <div class="card-body">
                      <h2> {{ $service['title'] }} </h2>

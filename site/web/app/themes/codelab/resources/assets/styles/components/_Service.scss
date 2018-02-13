@@ -1,7 +1,18 @@
 .Service {
-  margin-top: 7rem;
+  margin-top: 1rem;
+  @include media-breakpoint-up(md) {
+    margin-top: 7rem;
+  }
   &:nth-of-type(1) {
     margin-top: 3rem;
+    @include media-breakpoint-up(md) {
+      margin-top: 3rem;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .Card-Service {
+      margin-bottom: 3rem;
+    }
   }
   //.Service-cardThumbnail {
   //  width: 150px;

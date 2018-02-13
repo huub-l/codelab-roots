@@ -22,14 +22,14 @@
 
       <hr class="my-5">
 
-      <div class="row">
-         <div class="col-sm-6 d-flex align-items-center">
+      <div class="row d-flex align-items-center">
+         <div class="order-12 order-md-12 col-lg-6 d-flex align-items-center">
             <article class="justify-content-center p-4">
                <p class="Testimonial-quote"> "Really can't recommend them enough, we had a
                   great time
                   working with them [...] really exceeded our
                   expectations." </p>
-               <div class="media mt-5 d-flex align-items-center">
+               <div class="media mt-4 d-flex align-items-center">
                   <img width="50" height="50" class="mr-3" src="/app/uploads/2018/02/WillH.svg"
                        alt="Generic placeholder image">
                   <div class="media-body font-size-80">
@@ -39,7 +39,7 @@
                </div>
             </article>
          </div>
-         <div class="col-sm-6">
+         <div class="order-1 col-lg-6 text-center">
             <a href="#">
                <img src="/app/uploads/2018/02/video-image.svg" class="img-thumbnail">
             </a>

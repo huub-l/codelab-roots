@@ -1,10 +1,23 @@
 footer.Section-footer {
   $grey: #989B9E;
   $grey-darker: #54595E;
-  padding-top: 2.5rem;
-  padding-bottom: 1rem;
   font-family: 'Montserrat';
   color: $grey;
+  padding: 0;
+  @mixin mobileTextAlignment() {
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+    }
+  }
+  section {
+    @include media-breakpoint-down(sm) {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+  address, ul.list-inline {
+    margin: 0;
+  }
   a, span {
     color: $grey;
   }
@@ -14,8 +27,24 @@ footer.Section-footer {
   hr {
     border-color: $grey-darker;
   }
+  .Footer-topSection {
+    padding: 3.5rem 0 2rem 0;
+    @include media-breakpoint-down(sm) {
+      padding: 1.5rem 0 0.5rem 0;
+    }
+  }
+  .Footer-bottomSection {
+    padding: 0.5rem 0 1rem 0;
+    @include media-breakpoint-down(sm) {
+      padding: 0rem 0 0.25rem 0;
+    }
+  }
   .Footer-address {
     font-size: 90%;
+    p {
+      margin-bottom: 0;
+    }
+    @include mobileTextAlignment;
   }
   .Footer-contact {
     color: white;
@@ -36,8 +65,11 @@ footer.Section-footer {
   .Footer-links {
     text-align: right;
     font-size: 90%;
-    li.list-inline-item {
-      margin: 0 0 1rem 1rem;
+    ul.list-inline {
+      @include mobileTextAlignment;
+      li.list-inline-item {
+        margin: 0 0 1rem 1rem;
+      }
     }
   }
   .Footer-terms {
@@ -71,6 +103,7 @@ footer.Section-footer {
     text-align: right;
     font-weight: $font-weight-light;
     font-size: 80%;
+    @include mobileTextAlignment;
     span {
       color: $grey-darker;
     }

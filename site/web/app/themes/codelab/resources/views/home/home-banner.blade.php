@@ -2,7 +2,7 @@
    <div class="container">
       <div class="jumbotron">
          <div class="row">
-            <div class="Section-bannerText col-sm-7 col-lg-6 d-flex align-items-center">
+            <div class="Section-bannerText col-md-12 col-lg-7 col-xl-6 d-flex align-items-center">
                <div class="justify-content-center">
                   <h1 class="mb-4"> Atlanta Web Design & Development </h1>
                   <p class="mb-5 lead"> We're an Atlanta web design agency serving enterprise businesses, entrepreneurs,
@@ -15,7 +15,7 @@
                   </p>
                </div>
             </div>
-            <div class="col-sm-5 col-lg-4 offset-lg-2">
+            <div class="col-lg-5 col-xl-4 offset-xl-2 d-none d-lg-block">
                <div class="row">
                   @if(isset($services))
                      @foreach($services as $service)
