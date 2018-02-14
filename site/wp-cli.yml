@@ -4,3 +4,5 @@ path: web/wp
    ssh: vagrant@codelab.test/srv/www/codelab.com/current
 @staging:
    ssh: web@codelabstaging.com/srv/www/codelab.com/current
+@production:
+   ssh: web@codelabstudios.com/srv/www/codelab.com/current
