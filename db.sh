@@ -36,6 +36,8 @@ cd ..
 #
 # Replace database URL's
 cd site &&
+echo $development_url
+echo $production_url
 wp @$env search-replace $development_url $production_url && cd ..
 
 

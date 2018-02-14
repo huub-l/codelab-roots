@@ -1,4 +1,4 @@
-ú„Z<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:4:"3987";s:11:"post_author";s:1:"1";s:9:"post_date";s:19:"2017-05-21 01:06:01";s:13:"post_date_gmt";s:19:"2017-05-21 01:06:01";s:12:"post_content";s:10101:"If you run a business, you need to be using the best tools to compete in 2017.
+ò%„Z<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:4:"3987";s:11:"post_author";s:1:"1";s:9:"post_date";s:19:"2017-05-21 01:06:01";s:13:"post_date_gmt";s:19:"2017-05-21 01:06:01";s:12:"post_content";s:10101:"If you run a business, you need to be using the best tools to compete in 2017.
 
 We've all spent a <strong>ton</strong> of time digging through various web apps, tools, and software so I figured let's put and end to that right now and show you the best ones. ?
 
