@@ -12,7 +12,7 @@
                      class="order-12 order-sm-12 col-md-8 col-lg-9 @if($loop->index % 2 == 0) order-md-1 order-first @endif">
                      <h2 class="Heading Heading-underlined"> {{ $service->post_title }} </h2>
                      <p> {{ $service->_codelab_description }}</p>
-                     <a href="/services" class="btn btn-primary"> LEARN MORE</a>
+                     <a href="{{ $service->_codelab_card_url }}" class="btn btn-primary"> LEARN MORE</a>
                   </div>
                   <div
                      class="order-1 order-sm-1 d-flex col-md-4 col-lg-3

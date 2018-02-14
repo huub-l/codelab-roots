@@ -22,7 +22,9 @@ class FrontPage extends Controller
          $service->_codelab_card_title = get_post_meta($service->ID, '_codelab_card_title', true);
          $pageId = get_post_meta($service->ID, '_codelab_card_url', true);
          $cardUrl = get_page_link($pageId);
-         $service->_codelab_card_url = $cardUrl;
+//         $service->_codelab_card_url = $cardUrl;
+         // Override
+         $service->_codelab_card_url = '/lastform/1';
          return $service;
       }, $services);
 
