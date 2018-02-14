@@ -6,6 +6,8 @@ use Sober\Controller\Controller;
 
 class FrontPage extends Controller
 {
+   use Posts;
+
    public function services()
    {
       $services = get_posts([
@@ -42,26 +44,6 @@ class FrontPage extends Controller
       }, $portfolios);
 
       return $portfolios;
-   }
-
-   public function blogs()
-   {
-      $blogs = get_posts([
-         'post_type' => 'post',
-      ]);
-
-      //
-      // Attach meta data
-      //
-      $blogs = array_map(function ($blog) {
-         $category = get_the_category($blog->ID)[0];
-         $blog->categoryName = $category->name;
-         $blog->categoryUrl = get_term_link($category->term_id);
-         $blog->publishedDate = date('F j, Y', strtotime($blog->post_date));
-         return $blog;
-      }, $blogs);
-
-      return $blogs;
    }
 
 }
