@@ -28,7 +28,7 @@ rm $sql_file" && cd ..
 cd site &&
 #wp @staging db reset --yes &&
 #wp @staging plugin install wordpress-importer --activate &&
-wp @staging db import $sql_file &&
+wp @production db import $sql_file &&
 cd ..
 
 #wp import $sql_file &&

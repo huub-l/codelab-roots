@@ -1,4 +1,4 @@
-3¼ƒZ<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":24:{s:2:"ID";i:338;s:11:"post_author";s:1:"1";s:9:"post_date";s:19:"2018-02-13 16:58:10";s:13:"post_date_gmt";s:19:"2018-02-13 21:58:10";s:12:"post_content";s:21760:"<h1>Terms of Service</h1>
+$½ƒZ<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":24:{s:2:"ID";i:338;s:11:"post_author";s:1:"1";s:9:"post_date";s:19:"2018-02-13 16:58:10";s:13:"post_date_gmt";s:19:"2018-02-13 21:58:10";s:12:"post_content";s:21760:"<h1>Terms of Service</h1>
 This privacy policy serves as a resource for those who are concerned with how their â€˜Personally Identifiable Informationâ€™ (PLL) is being used online. PLL, as used in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read through our entire privacy policy carefully to understand exactly how we collect, use, protect, or otherwise handle your PLL in accordance with our website and US privacy law.
 
 What personal information do we collect from people that use our website, app, blog, or other services?
