@@ -15,12 +15,12 @@
       {{ the_custom_logo() }}
       {{--</a>--}}
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-primary"
+              aria-controls="nav-primary" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="nav-primary">
          <ul class="navbar-nav mr-auto">
             {{--<li class="nav-item active">--}}
             {{--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>--}}
@@ -47,7 +47,9 @@
                <a class="btn btn-primary btn-sm" href="/lastform/1">Free Consultation</a>
             </li>
             <li class="nav-item d-flex align-items-center justify-content-center px-2">
-               <a class="nav-link" href="tel:+18442605003"> <i class="fa fa-phone" aria-hidden="true"></i> </a>
+               <a class="nav-link" href="tel:+18442605003"> <i class="fa fa-phone text-lg font-size-2"
+                                                               aria-hidden="true"></i>
+               </a>
             </li>
          </ul>
       </div>

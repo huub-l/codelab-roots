@@ -4,8 +4,38 @@
   letter-spacing: $letter-spacing-lg;
   .container {
     padding: 0;
+    @include media-breakpoint-down(md) {
+      margin: 0;
+      min-width: 100%;
+    }
   }
 }
+
+.Navigation-header {
+
+  li.nav-item {
+    @include media-breakpoint-down(md) {
+      font-size: 1.25rem;
+      padding: 0.25rem 0;
+    }
+  }
+}
+
+//.navbar-collapse.show {
+//  max-height: none !important;
+//  height: auto !important;
+//}
+
+//.navbar-collapse.show {
+//  overflow: hidden;
+//  position: absolute;
+//  min-height: 100vh;
+//  top: 0;
+//  background: black;
+//  width: 100%;
+//  left: 0;
+//  margin-top: 4rem;
+//}
 
 .Navigation-category {
   .card {

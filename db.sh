@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ip=162.243.151.169
+env=production
 
 sql_file=sql-dump-production.sql
 development_url=$(cat trellis/group_vars/development/wordpress_sites.yml | shyaml get-value 'wordpress_sites.codelab\.com.site_hosts.0.canonical')
@@ -28,14 +29,14 @@ rm $sql_file" && cd ..
 cd site &&
 #wp @staging db reset --yes &&
 #wp @staging plugin install wordpress-importer --activate &&
-wp @production db import $sql_file &&
+wp @$env db import $sql_file &&
 cd ..
 
 #wp import $sql_file &&
 #
 # Replace database URL's
 cd site &&
-wp @production search-replace $development_url $production_url && cd ..
+wp @$env search-replace $development_url $production_url && cd ..
 
 
 

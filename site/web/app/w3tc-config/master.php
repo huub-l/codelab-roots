@@ -405,10 +405,13 @@
     "cdn.azure.ssl": "auto",
     "cdn.mirror.domain": [],
     "cdn.mirror.ssl": "auto",
-    "cdn.maxcdn.authorization_key": "",
-    "cdn.maxcdn.domain": [],
+    "cdn.maxcdn.authorization_key": "5ncwo3km864prs+27186b6fd8495fc2b2d9a234587e3e4205a795229+41c018ab326fafb7d0f173454c41d5ec",
+    "cdn.maxcdn.domain": {
+        "http_default": "cdn.codelabstudios.com",
+        "https_default": null
+    },
     "cdn.maxcdn.ssl": "auto",
-    "cdn.maxcdn.zone_id": 0,
+    "cdn.maxcdn.zone_id": "724204",
     "cdn.cotendo.username": "",
     "cdn.cotendo.password": "",
     "cdn.cotendo.zones": [],

@@ -1,4 +1,4 @@
-<section class="Section Section-portfolio">
+<section id="portfolio" class="Section Section-portfolio">
    <div class="container">
 
       <h2 class="Heading Heading-underlined"> Portfolio </h2>
