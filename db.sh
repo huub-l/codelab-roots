@@ -1,7 +1,8 @@
 #!/bin/bash
 
-sql_file=sql-dump-production.sql
 ip=162.243.151.169
+
+sql_file=sql-dump-production.sql
 development_url=$(cat trellis/group_vars/development/wordpress_sites.yml | shyaml get-value 'wordpress_sites.codelab\.com.site_hosts.0.canonical')
 staging_url=$(cat trellis/group_vars/staging/wordpress_sites.yml | shyaml get-value 'wordpress_sites.codelab\.com.site_hosts.0.canonical')
 production_url=$(cat trellis/group_vars/production/wordpress_sites.yml | shyaml get-value 'wordpress_sites.codelab\.com.site_hosts.0.canonical')
@@ -34,7 +35,7 @@ cd ..
 #
 # Replace database URL's
 cd site &&
-wp @production search-replace $development_url &production_url && cd ..
+wp @production search-replace $development_url $production_url && cd ..
 
 
 
