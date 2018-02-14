@@ -11,7 +11,6 @@ production_url=$(cat trellis/group_vars/production/wordpress_sites.yml | shyaml 
 #
 # Get Development canonical URL
 #
-#ip=$(cat trellis/group_vars/development/wordpress_sites.yml | shyaml get-value 'wordpress_sites.codelab\.com.site_hosts.0.canonical')
 cd site && wp @dev db export $sql_file && cd ..
 
 #
@@ -27,21 +26,14 @@ rm $sql_file" && cd ..
 # Import remote SQL file to remote database
 #
 cd site &&
-#wp @staging db reset --yes &&
-#wp @staging plugin install wordpress-importer --activate &&
-wp @$env db import $sql_file &&
-cd ..
+wp @$env db import $sql_file
 
-#wp import $sql_file &&
 #
 # Replace database URL's
-cd site &&
-echo $development_url
-echo $production_url
-wp @$env search-replace --all-tables $development_url $production_url && cd ..
+#
+wp @$env search-replace --all-tables $development_url $production_url
 
-
-
-#cd /srv/www/codelab.com/current/;
-#cd trellis && vagrant ssh -- -t "cd /srv/www/codelab.com/current/ && wp db export --path=/web"
-#scp database.sql web@$ip:/srv/www/codelab.com/current
+#
+# Disable cache plugin
+#
+wp @$env plugin activate w3-total-cache
