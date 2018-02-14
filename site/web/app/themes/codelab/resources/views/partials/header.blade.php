@@ -17,8 +17,10 @@
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-primary"
               aria-controls="nav-primary" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-      </button>
+         {{--<span class="navbar-toggler-icon">--}}
+         {{--</span>--}}
+         <i class="fa fa-bars" aria-hidden="true"></i>
+         </button>
 
       <div class="collapse navbar-collapse" id="nav-primary">
          <ul class="navbar-nav mr-auto">

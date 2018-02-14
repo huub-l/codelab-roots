@@ -11,8 +11,11 @@
   }
 }
 
-.Navigation-header {
+.navbar-toggler-icon {
+  //background:
+}
 
+.Navigation-header {
   li.nav-item {
     @include media-breakpoint-down(md) {
       font-size: 1.25rem;

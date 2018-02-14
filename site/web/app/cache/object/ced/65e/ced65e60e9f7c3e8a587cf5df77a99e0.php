@@ -1,4 +1,4 @@
-ò%„Z<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:4:"3446";s:11:"post_author";s:1:"2";s:9:"post_date";s:19:"2016-07-18 18:08:56";s:13:"post_date_gmt";s:19:"2016-07-18 18:08:56";s:12:"post_content";s:4051:"<h2>What is traditional marketing?</h2>
+¯'„Z<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:4:"3446";s:11:"post_author";s:1:"2";s:9:"post_date";s:19:"2016-07-18 18:08:56";s:13:"post_date_gmt";s:19:"2016-07-18 18:08:56";s:12:"post_content";s:4051:"<h2>What is traditional marketing?</h2>
 <strong>Traditional marketing </strong>incorporates several forms of both advertising and marketing. Most well-known tactics include advertisements that most of us see and hear every single day. These include:
 <ul>
 	<li>Print</li>
