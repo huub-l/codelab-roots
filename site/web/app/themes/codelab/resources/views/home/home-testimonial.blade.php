@@ -40,7 +40,7 @@
             </article>
          </div>
          <div class="order-1 col-lg-6 text-center">
-            <a href="#">
+            <a href="https://www.youtube.com/watch?v=LcI-h_2nVPs" target="_blank">
                <img src="/app/uploads/2018/02/video-image.svg" class="img-thumbnail">
             </a>
          </div>
