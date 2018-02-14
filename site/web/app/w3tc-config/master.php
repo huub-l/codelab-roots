@@ -7,7 +7,7 @@
     "cluster.messagebus.sns.api_secret": "",
     "cluster.messagebus.sns.topic_arn": "",
     "dbcache.configuration_overloaded": false,
-    "dbcache.debug": false,
+    "dbcache.debug": "0",
     "dbcache.enabled": "1",
     "dbcache.engine": "file",
     "dbcache.file.gc": 3600,
@@ -56,7 +56,7 @@
     ],
     "objectcache.configuration_overloaded": false,
     "objectcache.enabled": "1",
-    "objectcache.debug": false,
+    "objectcache.debug": "0",
     "objectcache.enabled_for_wp_admin": true,
     "objectcache.fallback_transients": true,
     "objectcache.engine": "file",
@@ -317,7 +317,7 @@
     "minify.cache.files_regexp": false,
     "cdn.configuration_overloaded": false,
     "cdn.enabled": "1",
-    "cdn.debug": false,
+    "cdn.debug": "0",
     "cdn.engine": "maxcdn",
     "cdn.uploads.enable": true,
     "cdn.includes.enable": true,
@@ -657,7 +657,7 @@
     "widget.latest.items": 3,
     "widget.latest_news.items": 5,
     "widget.pagespeed.enabled": "1",
-    "widget.pagespeed.key": "",
+    "widget.pagespeed.key": "AIzaSyCkF93Cy-7A6yubYg8PCd_coonZy1KK4AI",
     "widget.pagespeed.key.restrict.referrer": "",
     "widget.pagespeed.show_in_admin_bar": "0",
     "timelimit.email_send": 180,
@@ -675,14 +675,26 @@
     "common.instance_id": 1908510183,
     "common.force_master": true,
     "extensions.active": {
-        "newrelic": "w3-total-cache\/Extension_NewRelic_Plugin.php",
+        "cloudflare": "w3-total-cache\/Extension_CloudFlare_Plugin.php",
         "fragmentcache": "w3-total-cache\/Extension_FragmentCache_Plugin.php",
+        "newrelic": "w3-total-cache\/Extension_NewRelic_Plugin.php",
         "swarmify": "w3-total-cache\/Extension_Swarmify_Plugin.php"
     },
-    "extensions.active_frontend": [],
+    "extensions.active_frontend": {
+        "cloudflare": "*"
+    },
     "plugin.license_key": "",
     "plugin.type": "",
     "fragmentcache": {
         "engine": ""
+    },
+    "cloudflare": {
+        "email": "webber@codelabstudios.com",
+        "key": "cdaa875b5fadabbabafdf957ae3adc4d065e7",
+        "zone_id": "53cc08c0aa1f825de42a148dee358d9c",
+        "zone_name": "codelabstudios.com",
+        "widget_interval": "-30",
+        "widget_cache_mins": "5",
+        "pagecache": "0"
     }
 }
