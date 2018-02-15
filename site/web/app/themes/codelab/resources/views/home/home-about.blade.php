@@ -7,12 +7,9 @@
          </div>
          <div class="col-md-12 col-lg-8">
             <h2 class="Heading Heading-underlined"> About </h2>
-            <p> Bacon ipsum dolor amet chicken turkey bacon shoulder prosciutto doner picanha. Tail ham hock chuck
-               ribeye cow.
-               Tenderloin short loin ball tip sausage shankle jerky kevin rump filet mignon beef bresaola jowl.
-               sausage
-               shankle
-               jerky kevin rump filet mignon beef bresaola jowl.beef bresaola jowl. </p>
+            <p> Our web design and web development firm was founded out of the need to launch products in weeks not
+               months. The standard web design production process needed modernizing and we've been able to get
+               prototypes out in days of hearing your idea over a free phone consultation. Try us out yourself. </p>
             <button class="btn btn-primary"> Learn More</button>
          </div>
       </div>

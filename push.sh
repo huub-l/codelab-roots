@@ -31,7 +31,7 @@ wp @$env db import $sql_file
 #
 # Replace database URL's
 #
-wp @$env search-replace --all-tables $development_url $production_url
+wp @$env search-replace --all-tables --skip-tables="wp_w3tc_cdn_pathmap" $development_url $production_url
 
 #
 # Disable cache plugin

@@ -1,5 +1,7 @@
 body {
   background-color: $body-bg;
+  overflow: hidden;
+  width: 100%;
 }
 
 body .content {
@@ -7,7 +9,8 @@ body .content {
   padding-bottom: 2rem;
 }
 
-body.front-page-data .content {
+body.front-page-data .content,
+body.single .content {
   padding: 0;
 }
 

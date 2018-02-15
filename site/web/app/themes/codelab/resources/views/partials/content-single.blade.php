@@ -1,12 +1,12 @@
 <article @php(post_class())>
    <header>
-      <h1 class="entry-title">{{ get_the_title() }}</h1>
+      <h1 class="">{{ get_the_title() }}</h1>
       <div>
-         {{ the_post_thumbnail() }}
+         {{ the_post_thumbnail('full', ['class' => 'img-fluid']) }}
       </div>
       @include('partials/entry-meta')
    </header>
-   <div class="entry-content">
+   <div>
       @php(the_content())
    </div>
    <footer>

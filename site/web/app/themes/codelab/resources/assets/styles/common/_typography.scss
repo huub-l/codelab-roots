@@ -11,16 +11,24 @@
 }
 
 // Generate EM for heading
+p {
+  overflow-wrap: break-word;
+}
+
 .lead {
   letter-spacing: $letter-spacing-md;
 }
 
 h1, .h1 {
   letter-spacing: $letter-spacing-lg;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 h2, .h2 {
   letter-spacing: $letter-spacing-md;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
 }
 
 h3, .h3 {

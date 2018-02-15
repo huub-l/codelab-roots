@@ -31,7 +31,7 @@
 
       <div class="row">
          @foreach($blogs as $blog)
-            <div class="col-6 mb-4">
+            <div class="col-md-6">
                @include('partials.content-blog', ['style' => 'full'])
             </div>
          @endforeach
