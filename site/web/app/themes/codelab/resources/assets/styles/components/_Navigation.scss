@@ -1,7 +1,12 @@
 .Navigation {
   font-family: $headings-font-family;
   font-size: 0.9rem;
-  letter-spacing: $letter-spacing-lg;
+  //letter-spacing: $letter-spacing-lg;
+  a.nav-link, a {
+    font-weight: 300;
+    letter-spacing: 0;
+    text-transform: uppercase;
+  }
   .container {
     padding: 0;
     @include media-breakpoint-down(md) {

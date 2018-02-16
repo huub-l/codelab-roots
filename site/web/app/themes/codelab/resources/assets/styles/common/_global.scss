@@ -26,24 +26,6 @@ body.single .content {
   padding-right: 1rem;
 }
 
-.Heading {
-  font-family: $headings-font-family;
-  font-weight: $headings-font-weight;
-}
-
-.Heading-underlined {
-  position: relative;
-  margin-bottom: 1.5rem;
-  text-transform: lowercase;
-  &:before {
-    position: absolute;
-    content: "";
-    width: 3rem;
-    height: 2px;
-    bottom: -0.5rem;
-    border-bottom: 2px solid black;
-  }
-}
 
 // Darker color
 .bg-darker {
