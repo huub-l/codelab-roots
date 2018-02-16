@@ -5,11 +5,13 @@ section.Section-banner {
   background-color: $bg-color;
   position: relative;
   .Section-bannerText {
-    h1 {
-      font-size: 3rem;
-    }
-    p {
-      font-size: 1.25rem;
+    @include media-breakpoint-up(md) {
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.25rem;
+      }
     }
   }
   &:after {
