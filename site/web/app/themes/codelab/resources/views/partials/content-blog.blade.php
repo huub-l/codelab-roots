@@ -14,9 +14,10 @@
       @endif
 
       <small>
-         <a class="Card-blogCategory card-link"
-            href="{{ $blog->categoryUrl }}#"> {{ $blog->categoryName }} </a> <span
-            class="mx-1"> | </span>
+         <span class="Card-blogCategory card-link">
+               {{--href="{{ $blog->categoryUrl }}#">--}}
+            {{ $blog->categoryName }} </span>
+         <span class="mx-1"> | </span>
          <span class="Card-blogPublishedDate card-text"> {{ $blog->publishedDate }} </span>
       </small>
    </div>

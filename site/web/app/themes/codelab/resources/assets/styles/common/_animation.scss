@@ -1,0 +1,10 @@
+@mixin transition-all() {
+  transition: 300ms all;
+}
+
+a {
+  @include transition-all();
+  &:hover {
+    text-decoration: none;
+  }
+}
