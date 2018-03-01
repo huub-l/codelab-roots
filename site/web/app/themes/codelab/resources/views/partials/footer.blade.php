@@ -62,12 +62,14 @@
          <div class="col-md-4 d-none d-md-block">
             <section class="Footer-social">
                <ul class="list-inline">
-                  <li class="list-inline-item"><a href="https://twitter.com/codelabstudios"> <i
+                  <li class="list-inline-item"><a target="_blank" href="https://twitter.com/codelabstudios"> <i
                            class="fa fa-twitter"></i> </a></li>
-                  <li class="list-inline-item"><a href="https://www.facebook.com/codelabstudios"> <i
+                  <li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/codelabstudios"> <i
                            class="fa fa-facebook-official"></i> </a></li>
-                  {{--<li class="list-inline-item"><a href="#"> <i class="fa fa-youtube-play"></i> </a></li>--}}
-                  {{--<li class="list-inline-item"><a href="#"> <i class="fa fa-google-plus"></i> </a></li>--}}
+                  {{--<li class="list-inline-item"><a target="_blank" href="https://plus.google.com/115724499206461724996">--}}
+                  {{--<i class="fa fa-youtube-play"></i> </a></li>--}}
+                  <li class="list-inline-item"><a target="_blank" href="https://plus.google.com/115724499206461724996">
+                        <i class="fa fa-google-plus"></i> </a></li>
                </ul>
             </section>
          </div>

@@ -34,6 +34,6 @@ wp @$env db import $sql_file
 wp @$env search-replace --all-tables $development_url $production_url
 
 #
-# Disable cache plugin
+# Enable cache plugin
 #
 wp @$env plugin activate w3-total-cache
