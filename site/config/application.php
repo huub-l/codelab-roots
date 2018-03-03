@@ -16,8 +16,8 @@ Env::init();
  */
 $dotenv = new Dotenv\Dotenv($root_dir);
 if (file_exists($root_dir . '/.env')) {
-    $dotenv->load();
-    $dotenv->required(['DB_NAME', 'DB_USER', 'DB_PASSWORD', 'WP_HOME', 'WP_SITEURL']);
+   $dotenv->load();
+   $dotenv->required(['DB_NAME', 'DB_USER', 'DB_PASSWORD', 'WP_HOME', 'WP_SITEURL']);
 }
 
 /**
@@ -29,7 +29,7 @@ define('WP_ENV', env('WP_ENV') ?: 'production');
 $env_config = __DIR__ . '/environments/' . WP_ENV . '.php';
 
 if (file_exists($env_config)) {
-    require_once $env_config;
+   require_once $env_config;
 }
 
 /**
@@ -79,5 +79,17 @@ define('DISALLOW_FILE_EDIT', true);
  * Bootstrap WordPress
  */
 if (!defined('ABSPATH')) {
-    define('ABSPATH', $webroot_dir . '/wp/');
+   define('ABSPATH', $webroot_dir . '/wp/');
 }
+
+
+/*
+ * Multisite
+ */
+define('WP_ALLOW_MULTISITE', true);
+define('MULTISITE', true);
+define('SUBDOMAIN_INSTALL', false); // Set to true if using subdomains
+define('DOMAIN_CURRENT_SITE', env('DOMAIN_CURRENT_SITE'));
+define('PATH_CURRENT_SITE', env('PATH_CURRENT_SITE') ?: '/');
+define('SITE_ID_CURRENT_SITE', env('SITE_ID_CURRENT_SITE') ?: 1);
+define('BLOG_ID_CURRENT_SITE', env('BLOG_ID_CURRENT_SITE') ?: 1);
